@@ -57,7 +57,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Set your API Key (Replace with your actual key)
-GOOGLE_API_KEY = "Your_API_KEY"
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 # Ensure API Key is provided
